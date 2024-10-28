@@ -8,29 +8,3 @@ spec:
   type: "experiment"
   lifecycle: "deprecated"
   owner: "standardisering"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Group"
-metadata:
-  name: "security_champion_Standardisering"
-  title: "Security Champion Standardisering"
-spec:
-  type: "security_champion"
-  parent: "it_security_champions"
-  members:
-  - "toreJohnsen"
-  children:
-  - "resource:Standardisering"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Resource"
-metadata:
-  name: "Standardisering"
-  links:
-  - url: "https://github.com/kartverket/Standardisering"
-    title: "Standardisering på GitHub"
-spec:
-  type: "repo"
-  owner: "security_champion_Standardisering"
-  dependencyOf:
-  - "component:Standardisering"
