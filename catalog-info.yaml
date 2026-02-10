@@ -1,10 +1,8 @@
-# nonk8s
-apiVersion: "backstage.io/v1alpha1"
-kind: "Component"
+apiVersion: backstage.io/v1alpha1
+kind: Component
 metadata:
-  name: "Standardisering"
-  tags: []
+  name: Standardisering
 spec:
-  type: "experiment"
-  lifecycle: "deprecated"
-  owner: "standardisering"
+  type: documentation
+  lifecycle: deprecated
+  owner: standardisering
